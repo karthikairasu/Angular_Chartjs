@@ -1,15 +1,56 @@
 <div class="container-fluid">
-    <div class="row">
-        <div class="col-md-4">
-            <div style="height:400px; width:400px">
-                <canvas id="canvas">{{chart}}</canvas>
-              </div>
-        </div>
-        <div class="col-md-4">
-            <div style="height:400px; width:400px">
-                <canvas id="canvas2">{{chart2}}</canvas>
-              </div>
-        </div>
-        <div class="col-md-4"></div>
+  <div class="row">
+    <h4 class="text-center">Chartjs</h4>
+    <div class="col-md-4 py-2">
+      <div class="card shadow">
+        <canvas id="canvas">{{ chart }}</canvas>
+      </div>
     </div>
+    <div class="col-md-4 py-2">
+      <div class="card shadow">
+        <canvas id="canvas2">{{ chart2 }}</canvas>
+      </div>
+    </div>
+    <div class="col-md-4 py-2">
+      <div class="card shadow">
+        <canvas id="canvas3">{{ chart3 }}</canvas>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <h4 class="text-center">Apex Chart</h4>
+    <div class="col-md-4 py-2">
+      <div class="card shadow">
+        <apx-chart
+          [series]="chartSeries"
+          [chart]="chartDetails"
+          [labels]="chartLabels"
+          [title]="chartTitle"
+          [dataLabels]="chartDataLabels"
+        ></apx-chart>
+      </div>
+    </div>
+    <div class="col-md-4 py-2">
+      <div class="card shadow">
+        <apx-chart
+          [series]="chartSeries"
+          [chart]="chartDetails"
+          [labels]="chartLabels"
+          [title]="chartTitle"
+          [dataLabels]="chartDataLabels"
+        ></apx-chart>
+      </div>
+    </div>
+    <div class="col-md-4 py-2">
+      <div class="card shadow">
+        <apx-chart
+          [series]="chartSeries2"
+          [chart]="chartDetails2"
+          [labels]="chartLabels2"
+          [title]="chartTitle2"
+          [dataLabels]="chartDataLabels2"
+        ></apx-chart>
+      </div>
+    </div>
+  </div>
 </div>
